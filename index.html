@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Times of Karnataka - ಕರ್ನಾಟಕ ಸುದ್ದಿ | ಬ್ಲಾಗ್ | ಭಾರತ | ಕ್ರೀಡೆ</title>
+  <meta name="description" content="ಕರ್ನಾಟಕದ ಇತ್ತೀಚಿನ ಸುದ್ದಿ, ಬ್ಲಾಗ್‌ಗಳು ಮತ್ತು ವಿಶ್ಲೇಷಣೆಗಳು ಕನ್ನಡದಲ್ಲಿ."/>
+
+  <!-- Google AdSense placeholder – replace with your real code -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --red: #d00;
+      --dark: #1a1a1a;
+      --gray: #555;
+      --light: #f8f8f8;
+      --border: #ddd;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a { color: var(--red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+
+    header {
+      background: white;
+      border-bottom: 4px solid var(--red);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .header-top {
+      font-size: 0.85rem;
+      color: var(--gray);
+      padding: 8px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 2.8rem;
+      color: var(--red);
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #f0f0f0;
+      padding: 12px 0;
+      margin: 0;
+    }
+
+    nav li { margin: 0 16px; }
+    nav a { font-weight: bold; color: var(--dark); font-size: 0.98rem; }
+
+    .main { padding: 25px 0; }
+    .content-area { max-width: 900px; margin: 0 auto; }
+
+    #home-view .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .blog-teaser {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .blog-teaser img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .teaser-content { padding: 16px; }
+    .teaser-content h3 { font-size: 1.28rem; margin-bottom: 10px; line-height: 1.3; }
+    .meta { font-size: 0.85rem; color: var(--gray); margin-bottom: 10px; }
+    .excerpt { font-size: 0.95rem; color: #444; margin-bottom: 12px; }
+
+    .read-more-btn {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .read-more-btn:hover { background: #b00; text-decoration: none; }
+
+    #article-view { display: none; }
+
+    .article-header { text-align: center; margin-bottom: 25px; }
+    .article-header h1 { font-size: 2.2rem; color: var(--dark); margin-bottom: 10px; }
+    .article-meta { font-size: 0.9rem; color: var(--gray); margin-bottom: 20px; }
+
+    .featured-img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    .article-body { font-size: 1.05rem; margin-bottom: 30px; }
+    .article-body p { margin-bottom: 1.4em; }
+
+    .back-btn {
+      display: inline-block;
+      margin: 20px 0;
+      background: #444;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .back-btn:hover { background: #222; text-decoration: none; }
+
+    .related { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
+    .related h3 { color: var(--red); margin-bottom: 15px; }
+    .related ul { list-style: none; }
+    .related li { margin: 12px 0; }
+
+    .ad-slot {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 15px;
+      margin: 25px 0;
+      border: 1px dashed #ccc;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 40px 0 30px;
+      margin-top: 50px;
+    }
+
+    footer a { color: #ccc; margin: 0 14px; font-size: 0.95rem; }
+    footer a:hover { color: white; }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 1.8rem; }
+      nav ul { flex-direction: column; }
+      nav li { margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-top">
+      <div>Edition: Karnataka</div>
+      <div>ಕನ್ನಡ</div>
+      <div id="current-date"></div>
+    </div>
+
+    <h1 class="logo">Times of Karnataka</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showHome()">ಮುಖಪುಟ</a></li>
+        <li><a href="#">ಕರ್ನಾಟಕ</a></li>
+        <li><a href="#">ಭಾರತ</a></li>
+        <li><a href="#">ವಿಶ್ವ</a></li>
+        <li><a href="#">ಕ್ರೀಡೆ</a></li>
+        <li><a href="#" onclick="showHome()">ಬ್ಲಾಗ್</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container main">
+  <div id="home-view" class="content-area">
+    <h2 style="color:var(--red); margin-bottom:20px;">ಬ್ಲಾಗ್ ಪೋಸ್ಟ್‌ಗಳು</h2>
+    <div class="card-grid" id="blog-list"></div>
+    <div class="ad-slot">[ Google Ad - Leaderboard / Horizontal Banner ]</div>
+  </div>
+
+  <div id="article-view" class="content-area">
+    <div class="article" id="article-content"></div>
+    <div class="ad-slot">[ Google Ad - In-article ]</div>
+    <a href="#" class="back-btn" onclick="showHome()">← ಹಿಂದಕ್ಕೆ ಹೋಗಿ</a>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Times of Karnataka. ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿವೆ.</p>
+    <p>
+      <a href="about.html">ನಮ್ಮ ಬಗ್ಗೆ</a> •
+      <a href="privacy.html">ಗೌಪ್ಯತಾ ನೀತಿ</a> •
+      <a href="#">ಸಂಪರ್ಕಿಸಿ</a> •
+      <a href="#">ಜಾಹೀರಾತು</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+// Current date
+const dateEl = document.getElementById('current-date');
+const now = new Date();
+dateEl.textContent = now.toLocaleDateString('kn-IN', {
+  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+}) + " | " + now.toLocaleTimeString('en-IN', {hour:'2-digit', minute:'2-digit'}) + " IST";
+
+// Blog data
+const blogPosts = [
+  { id: 1, title: "ಕರ್ನಾಟಕದ ಐತಿಹಾಸಿಕ ದೇವಾಲಯಗಳು ಮತ್ತು ಪ್ರವಾಸ", date: "ಫೆಬ್ರವರಿ 05, 2026", excerpt: "ಹಂಪಿ, ಬಾದಾಮಿ, ಶ್ರವಣಬೆಳಗೊಳ...", image: "https://images.unsplash.com/photo-1580130379624-3a069adbffc5?w=1200", fullContent: "<p>ಕರ್ನಾಟಕ ರಾಜ್ಯವು ಶ್ರೀಮಂತ ಇತಿಹಾಸ ಹೊಂದಿದೆ...</p>" },
+  { id: 2, title: "ಬೆಂಗಳೂರಿನಲ್ಲಿ ಎರಡು ದಿನಗಳ ವೀಕೆಂಡ್ ಯೋಜನೆ", date: "ಫೆಬ್ರವರಿ 03, 2026", excerpt: "ನಂದಿ ಹಿಲ್ಸ್, ಲಾಲ್‌ಬಾಗ್...", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200", fullContent: "<p>ಬೆಂಗಳೂರು ಪ್ರಕೃತಿ ಪ್ರೇಮಿಗಳಿಗೆ ಸ್ವರ್ಗ...</p>" },
+  { id: 3, title: "ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಆಧುನಿಕ ಲೇಖಕರು", date: "ಜನವರಿ 30, 2026", excerpt: "ಹೊಸ ಧ್ವನಿಗಳು...", image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200", fullContent: "<p>ಕನ್ನಡ ಸಾಹಿತ್ಯ ಭಾವನಾತ್ಮಕವಾಗಿದೆ...</p>" }
+];
+
+function renderBlogList() {
+  const container = document.getElementById('blog-list');
+  container.innerHTML = '';
+  blogPosts.forEach(post => {
+    const div = document.createElement('div');
+    div.className = 'blog-teaser';
+    div.innerHTML = `
+      <img src="${post.image}" alt="${post.title}">
+      <div class="teaser-content">
+        <h3>${post.title}</h3>
+        <div class="meta">${post.date}</div>
+        <p class="excerpt">${post.excerpt}</p>
+        <span class="read-more-btn" onclick="showArticle(${post.id})">ಮುಂದುವರೆದು ಓದಿ →</span>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function showArticle(id) {
+  const post = blogPosts.find(p => p.id === id);
+  if (!post) return;
+  document.getElementById('article-content').innerHTML = `
+    <div class="article-header">
+      <h1>${post.title}</h1>
+      <div class="article-meta">${post.date} | Times of Karnataka</div>
+    </div>
+    <img src="${post.image}" alt="${post.title}" class="featured-img">
+    <div class="article-body">${post.fullContent}</div>
+  `;
+  document.getElementById('home-view').style.display = 'none';
+  document.getElementById('article-view').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+function showHome() {
+  document.getElementById('article-view').style.display = 'none';
+  document.getElementById('home-view').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+
+renderBlogList();
+</script>
+</body>
+</html>
